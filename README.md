@@ -15,14 +15,10 @@ Podemos correr eureka facilmente de dos maneras:
 ```
 
 - Con docker:
-1. Creamos la imagen:
-```shell
-docker build -t <name> .
-```
 
-2. Subimos el contenedor de acuerdo al nombre que pongamos de la imagen, importante exponer el puerto 8761:
+1. Creamos y corremos el contenedor, importante exponer el puerto 8761:
 ```shell
-docker run -p 8761:8761 --name <container_name> <image_name>
+docker run -p 8761:8761 --name <container_name> jhojanlopez/inventory_system_eureka
 ```
 
 
